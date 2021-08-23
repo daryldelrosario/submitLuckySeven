@@ -1,0 +1,43 @@
+header {
+	background-color: black;
+	color: white;
+	padding: 22px;
+	text-align: center;
+	margin: auto;
+}
+
+header h1{
+	font-size: 5em;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	padding: 10px;
+	margin: auto;
+}
+
+hr {
+	border: 3px solid red;
+	width: 100%;
+	margin: auto;
+}
+
+table.resultTable tr:nth-child(odd) {
+	background-color: lightgray;
+}
+
+table.resultTable td{
+	border: 1px solid black;
+}
+
+.rLabel, .rShow {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.rShow {
+	text-align: right;
+}

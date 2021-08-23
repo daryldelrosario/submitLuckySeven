@@ -1,0 +1,108 @@
+<!doctype html>
+
+<!-- 
+Creator: Daryl del Rosario
+Date Created: Saturday, August 21, 2021 @ 12:24 pm
+Last Modified: Saturday, August 21, 2021 @ 7:58 pm
+-->
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Javascript File -->
+	<script type="text/javascript" src="luckySeven.js"></script>				
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+		
+	<!-- CSS File -->
+	<link href="styles/luckySeven.css" rel="stylesheet" type="text/css" />
+
+    <title>Lucky Sevens</title>
+  </head>
+  
+  <body onload="letsPlay();">
+	<div class="container">
+	<header>
+		<h1>Lucky Sevens</h1>
+	</header>
+	<br />
+	
+	<div class="container">
+		<table style="width: 80%; margin: auto;">
+			<thead>
+			<tr>
+				<th style="font-size: 2em; text-align: center; width: 50%">Starting Bet: </th>
+				<th style="font-size: 2em; text-align: center;" class="border border-5 border-dark">
+				$ <span id="startMoney"></span>.00</th>
+			</tr>
+			</thead>
+			
+			<tfoot>
+			<tr>
+				<td colspan="2" style="font-size: 1.43em; text-align: center; padding: 30px;">
+				<button id="playBtn" type="button" class="btn btn-outline-dark btn-lg" style="width: 50%; font-weight: bold;" onclick="clickPlay();">Play</button>
+				</td>
+			</tr>
+			</tfoot>
+		</table>
+		
+		<div id="rHr" style="display: none">
+		<hr />
+		</div>
+		<br />
+		
+		<div id="rTitle" style="display: none">
+		<h1 style="font-size: 3em; text-align: center; font-weight: bold;">Result</h1>
+		</div>
+		
+		<div id="rTable" style="display: none">
+		<table class="resultTable" border="1px" style="width: 50%; margin: auto;">
+			<tbody>
+			<tr>
+				<td class="rLabel">Starting Bet: </td>
+				<td class ="rShow" id="rStartBet"></td>
+			</tr>
+			<tr>
+				<td class="rLabel">Total Rolls Before Going Broke: </td>
+				<td class ="rShow" id="rTotalRoll"></td>
+			</tr>
+			<tr>
+				<td class="rLabel">Highest Amount Won: </td>
+				<td class ="rShow" id="rMaxWin"></td>
+			</tr>
+			</tr>
+				<td class="rLabel">Roll Count at Highest Amount Won: </td>
+				<td class ="rShow" id="rMaxRoll"></td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+			<td colspan="2" style="font-size: 1.43em; text-align: center; padding: 30px;">
+			<button id="refreshBtn" type="button" class="btn btn-outline-dark btn-lg" style="width: 50%; font-weight: bold;" onclick="window.location.reload();">
+			Play Again</button>
+			</td>
+			</tr>
+			</tfoot>
+		</table>
+		</div>
+		<br />
+		
+		
+		
+		
+		<div id="showDice"></div>
+		<div id="showMoney"></div>
+		<div id="updateMoney"></div>
+
+	</div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+	</script>
+  </body>
+</html>
